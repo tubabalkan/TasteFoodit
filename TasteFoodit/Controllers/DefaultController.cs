@@ -52,11 +52,38 @@ namespace TasteFoodit.Controllers
         }
         public PartialViewResult PartialTestimonial()
         {
-            return PartialView();
+            var values = context.Testimonials.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialChef()
         {
             return PartialView();
         }
+        public PartialViewResult PartialPerfect()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialTasteit()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialOpenHours()
+        {
+            var values = context.OpenDayHours.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialInstagramImage()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialBulten()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
+
     }
 }

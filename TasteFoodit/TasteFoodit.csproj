@@ -411,6 +411,12 @@
     <Content Include="Views\Default\PartialMenu.cshtml" />
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
     <Content Include="Views\Default\PartialChef.cshtml" />
+    <Content Include="Views\Default\PartialPerfect.cshtml" />
+    <Content Include="Views\Default\PartialTasteit.cshtml" />
+    <Content Include="Views\Default\PartialOpenHours.cshtml" />
+    <Content Include="Views\Default\PartialInstagramImage.cshtml" />
+    <Content Include="Views\Default\PartialBulten.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
