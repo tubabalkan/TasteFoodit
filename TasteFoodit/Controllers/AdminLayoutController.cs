@@ -12,7 +12,7 @@ namespace TasteFoodit.Controllers
         public ActionResult Index()
         {
             return View();
-        }
+        } 
         public PartialViewResult PartialHead()
         {
             return PartialView();
