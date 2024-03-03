@@ -1,18 +1,16 @@
-﻿@model TasteFoodit.Entities.Product
+﻿@model TasteFoodit.Entities.About
 @{
-    ViewBag.Title = "CreateProduct";
+    ViewBag.Title = "CreateAbout";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
-
-
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Ürün Ekleme Sayfası</h1>
+        <h1 class="h3 mb-0 text-gray-800">Hakkımızda Bilgisi Ekleme Sayfası</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/Default/Index/">Ana Sayfa</a></li>
-            <li class="breadcrumb-item">Kategoriler</li>
-            <li class="breadcrumb-item active" aria-current="page">Ürün İşlemleri</li>
+            <li class="breadcrumb-item">Hakkımızda</li>
+            <li class="breadcrumb-item active" aria-current="page">Hakkımızda Bilgisi İşlemleri</li>
         </ol>
     </div>
     <div class="row">
@@ -25,27 +23,22 @@
                 <div class="card-body">
                     <form method="post">
                         <div class="form-group">
-                            <label>Ürün Adı</label>
-                            @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+                            
+                            <label>Başlık</label>
+                            @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
                             <br />
-                            <label>Ürün Fiyatı</label>
-                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
-                            <br />
-                            <label>Ürün Görsel</label>
+                            <label>Görsel</label>
                             @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
                             <br />
-                            <label>Ürün Açıklaması</label>
+                            <label>Açıklama</label>
                             @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
                             <br />
-
-                            <label>Ürün Kategorisi</label>
-                            @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
-                            <br />
                         </div>
-                        <button type="submit" class="btn btn-primary">Ürünü Ekle</button>
+                        <button type="submit" class="btn btn-primary">Açıklamayı ekle</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

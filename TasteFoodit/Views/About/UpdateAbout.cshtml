@@ -1,6 +1,6 @@
-﻿@model TasteFoodit.Entities.Product
+﻿@model TasteFoodit.Entities.About
 @{
-    ViewBag.Title = "UpdateProduct";
+    ViewBag.Title = "UpdateAbout";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
 
@@ -8,7 +8,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Ürün Güncelleme Sayfası</h1>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/Default/Index/">Ana Sayfa</a></li>
+            <li class="breadcrumb-item"><a href="./">Ana Sayfa</a></li>
             <li class="breadcrumb-item">Ürünler</li>
             <li class="breadcrumb-item active" aria-current="page">Ürün İşlemleri</li>
         </ol>
@@ -24,27 +24,24 @@
                 <div class="card-body">
                     <form method="post">
                         <div class="form-group">
-                            @Html.HiddenFor(x => x.ProductId)
-                            <label>Ürün Adı</label>
-                            @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+                            @Html.HiddenFor(x => x.AboutId)
+                            
+                            <label>Başlık</label>
+                            @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
                             <br />
-                            <label>Ürün Fiyatı</label>
-                            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
-                            <br />
-                            <label>Ürün Görseli</label>
+                            <label>Görsel</label>
                             @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
                             <br />
-                            <label>Ürün Açıklaması</label>
+                            <label>Açıklama</label>
                             @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
                             <br />
-                            <label>Ürün Kategorisi</label>
-                            @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
-                            <br />
+
                         </div>
-                        <button type="submit" class="btn btn-success">Ürünü Güncelle</button>
+                        <button type="submit" class="btn btn-success">Açıklama Bilgisini Güncelle</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+

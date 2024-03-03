@@ -128,13 +128,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\TasteContext.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OpenDayHourController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -4790,6 +4798,27 @@
     <Content Include="Views\Product\CreateProduct.cshtml" />
     <Content Include="Views\Product\UpdateProduct.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialList.cshtml" />
+    <Content Include="Views\Testimonial\CreateTestimonial.cshtml" />
+    <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\Chef\ChefList.cshtml" />
+    <Content Include="Views\Chef\CreateChef.cshtml" />
+    <Content Include="Views\Chef\UpdateChef.cshtml" />
+    <Content Include="Views\About\AboutList.cshtml" />
+    <Content Include="Views\About\CreateAbout.cshtml" />
+    <Content Include="Views\About\UpdateAbout.cshtml" />
+    <Content Include="Views\Admin\AdminList.cshtml" />
+    <Content Include="Views\Admin\CreateAdmin.cshtml" />
+    <Content Include="Views\Admin\UpdateAdmin.cshtml" />
+    <Content Include="Views\Adress\AdresList.cshtml" />
+    <Content Include="Views\Adress\CreateAdress.cshtml" />
+    <Content Include="Views\Adress\UpdateAdres.cshtml" />
+    <Content Include="Views\Contact\ContactList.cshtml" />
+    <Content Include="Views\Contact\CreateContact.cshtml" />
+    <Content Include="Views\Contact\UpdateContact.cshtml" />
+    <Content Include="Views\OpenDayHour\OpenDayList.cshtml" />
+    <Content Include="Views\OpenDayHour\CreatOpenDayHour.cshtml" />
+    <Content Include="Views\OpenDayHour\UpdateOpenDayHour.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4798,6 +4827,7 @@
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
     <Folder Include="ToDoList\" />
+    <Folder Include="Views\Reservation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
