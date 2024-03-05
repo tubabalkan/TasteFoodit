@@ -138,7 +138,9 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
+    <Compile Include="Controllers\HakkimizdaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\OpenDayHourController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
@@ -149,6 +151,7 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\OpenDayHour.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
@@ -163,6 +166,14 @@
     <Compile Include="Migrations\202402291727598_mig2.cs" />
     <Compile Include="Migrations\202402291727598_mig2.designer.cs">
       <DependentUpon>202402291727598_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403051711543_mig3.cs" />
+    <Compile Include="Migrations\202403051711543_mig3.designer.cs">
+      <DependentUpon>202403051711543_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403051740085_mig4.cs" />
+    <Compile Include="Migrations\202403051740085_mig4.designer.cs">
+      <DependentUpon>202403051740085_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4819,6 +4830,7 @@
     <Content Include="Views\OpenDayHour\OpenDayList.cshtml" />
     <Content Include="Views\OpenDayHour\CreatOpenDayHour.cshtml" />
     <Content Include="Views\OpenDayHour\UpdateOpenDayHour.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4827,6 +4839,7 @@
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
     <Folder Include="ToDoList\" />
+    <Folder Include="Views\Hakkimizda\" />
     <Folder Include="Views\Reservation\" />
   </ItemGroup>
   <ItemGroup>
@@ -4848,6 +4861,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402291727598_mig2.resx">
       <DependentUpon>202402291727598_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403051711543_mig3.resx">
+      <DependentUpon>202403051711543_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403051740085_mig4.resx">
+      <DependentUpon>202403051740085_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
