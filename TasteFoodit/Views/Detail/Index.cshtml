@@ -1,0 +1,24 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+@Html.Action("PartialHead", "Default")
+<body>
+
+    @Html.Action("PartialNavbarInfo", "Default")
+    @Html.Action("PartialNavbar", "Default")
+    <!-- END nav -->
+
+   
+    @RenderBody()
+
+    @Html.Action("PartialFooter", "Default")
+
+    @Html.Action("PartialScript", "Default");
+
+
+</body>
+</html>
