@@ -73,6 +73,11 @@ namespace TasteFoodit.Controllers
 
 
         }
+        public ActionResult DetayTestimonial()
+        {
+            var values = context.Testimonials.ToList();
+            return View(values);
+        }
 
     }
 }

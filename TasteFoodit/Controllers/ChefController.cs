@@ -69,5 +69,11 @@ namespace TasteFoodit.Controllers
             context.SaveChanges();
             return RedirectToAction("ChefList");
         }
+        public ActionResult DetayChef()
+        {
+            var values = context.Chefs.ToList();
+            return View(values);
+        }
+
     }
 }
