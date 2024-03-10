@@ -2027,6 +2027,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="resim\resim.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AdminLTE-3.0.4\.babelrc" />
@@ -2319,6 +2320,7 @@
     <Content Include="Templates\ruang-admin\img\logo\logo.png" />
     <Content Include="Templates\ruang-admin\img\logo\logo2.png" />
     <Content Include="Templates\ruang-admin\img\man.png" />
+    <Content Include="Templates\ruang-admin\img\resim.png" />
     <Content Include="Templates\ruang-admin\img\screenshot\ss2.png" />
     <Content Include="Templates\ruang-admin\img\think.svg" />
     <Content Include="Templates\ruang-admin\img\undraw_posting_photo.svg" />
