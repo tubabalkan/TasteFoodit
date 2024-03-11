@@ -9,7 +9,7 @@ namespace TasteFoodit.Controllers
     public class ReservationController : Controller
     {
         // GET: Reservation
-        public ActionResult Index()
+        public ActionResult RezervasyonList()
         {
             return View();
         }

@@ -4,9 +4,6 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
     int count = 0;
 }
-
-
-
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Ürün Listesi</h1>
@@ -21,17 +18,17 @@
         <div class="col-lg-12 mb-4">
             <!-- Simple Tables -->
             <div class="card">
-                
+                <br/>
                 <div class="table-responsive">
-                    <table class="table align-items-center table-flush">
+                    <table id="tbl1" class="table align-items-center table-flush table-hover">
                         <thead class="thead-light">
                             <tr>
                                 <th>Ürün Id</th>
                                 <th>Ürün Adı</th>
                                 <th>Ürün Kategorisi</th>
                                 <th>Ürün Fiyatı</th>
-                                <th>Ürün Açıklaması</th>
                                 <th>Durum</th>
+                                <th>Görsel</th>
                                 <th>Sil</th>
                                 <th>Güncelle</th>
                             </tr>
@@ -45,14 +42,15 @@
                                     <td>@item.ProductName</td>
                                     <td>@item.Category.CategoryName</td>
                                     <td>@item.Price</td>
-                                    <td>@item.Description</td>
                                     <td>@item.IsActive</td>
+                                    <td><img src="@item.ImageUrl" style="height:50px;width:50px;" class="rounded mx-auto d-block" alt="@item.ImageUrl"></td>
                                     <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-danger">Ürünü Sil</a></td>
                                     <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-success">Güncelle</a></td>
                                 </tr>
                             }
                         </tbody>
                     </table>
+                    <br />
                     <a href="/Product/CreateProduct/" class="btn btn-primary">Yeni Ürün Girişi</a>
                 </div>
                 <div class="card-footer"></div>
@@ -62,3 +60,17 @@
     <!--Row-->
     <!-- Modal Logout -->
 </div>
+
+<!--<link href="~/Content/bootstrap.css" rel="stylesheet" />-->
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+
+<script>
+    $('#tbl1').dataTable({});
+</script>
