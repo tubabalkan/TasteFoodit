@@ -3,76 +3,82 @@
     ViewBag.Title = "DetayTestimonial";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-<section class="content-header">
-    <div class="container-fluid">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <h1>Referans Detay Sayfası</h1>
-            </div>
-        </div>
-    </div><!-- /.container-fluid -->
-</section>
-<div class="wrapper">
-    <!-- Navbar -->
-    <!-- /.navbar -->
-    <!-- Main Sidebar Container -->
-    <!-- Content Wrapper. Contains page content -->
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2"></div>
-        </div><!-- /.container-fluid -->
-    </section>
-    <!-- Main content -->
-    <section class="content">
-        <!-- Default box -->
-        <div class="card card-solid">
-            <div class="card-body pb-0">
-                <div class="row d-flex align-items-stretch">
-                    @foreach (var x in Model)
-                    {
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                    @x.Title
-                                    <br />
-                                </div>
-                                <div class="card-body pt-0">
-                                  
-                                 
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>@x.NameSurname</b></h2>
-                                            <p class="text-muted text-sm"><b>Yorum: </b>@x.Description </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
+<div class="container-fluid" id="container-wrapper">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Referans Listesi</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/Default/Index/">Ana Sayfa</a></li>
+            <li class="breadcrumb-item">Referanslar</li>
+            <li class="breadcrumb-item active" aria-current="page">Referans İşlemleri</li>
+        </ol>
+    </div>
+    </div>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <!-- Content Wrapper. Contains page content -->
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2"></div>
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <!-- Default box -->
+            <div class="card card-solid">
+                <div class="card-body pb-0">
+                    <div class="row d-flex align-items-stretch">
+                        @foreach (var x in Model)
+                        {
+                            <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                                <div class="card bg-light">
+                                    <div class="card-header text-muted border-bottom-0">
+                                        @x.Title
+                                        <br />
+                                    </div>
+                                    <div class="card-body pt-0">
 
-                                               </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="@x.ImageUrl" alt="" class="img-circle img-fluid">
+
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <h2 class="lead"><b>@x.NameSurname</b></h2>
+                                                <p class="text-muted text-sm"><b>Yorum: </b>@x.Description </p>
+                                                <ul class="ml-4 mb-0 fa-ul text-muted">
+                                                </ul>
+                                            </div>
+                                            <div class="col-5 text-center">
+                                                <img src="@x.ImageUrl" alt="" class="img-circle img-fluid">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                       
+                                    <div class="card-footer">
+                                        <div class="text-right">
+                                            <a href="/Testimonial/DeleteTestimonial/@x.TestimonialId" class="btn btn-sm btn-danger">
+                                                <i class="fas fa-user"></i> Sil
+                                            </a>
+                                            <a href="/Testimonial/UpdateTestimonial/@x.TestimonialId" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-user"></i> Güncelle
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    }
+                        }
 
 
+                    </div>
                 </div>
+                <!-- /.card-body -->
+                <!-- /.card-footer -->
             </div>
-            <!-- /.card-body -->
-            <!-- /.card-footer -->
-        </div>
-        <!-- /.card -->
-
-    </section>
-    <!-- /.content -->
-</div>
+            <!-- /.card -->
+            <br />
+            <a href="/Testimonial/CreateTestimonial/" class="btn btn-primary">Yeni Referans Girişi</a>
+        </section>
+        <!-- /.content -->
+    </div>
 
 
 

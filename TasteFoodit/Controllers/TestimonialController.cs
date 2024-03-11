@@ -35,7 +35,7 @@ namespace TasteFoodit.Controllers
            
             context.Testimonials.Add(p);
             context.SaveChanges();
-            return RedirectToAction("TestimonialList");
+            return RedirectToAction("DetayTestimonial");
 
         }
         public ActionResult DeleteTestimonial(int id)
@@ -43,7 +43,7 @@ namespace TasteFoodit.Controllers
             var value = context.Testimonials.Find(id);
             context.Testimonials.Remove(value);
             context.SaveChanges();
-            return RedirectToAction("TestimonialList");
+            return RedirectToAction("DetayTestimonial");
         }
         [HttpGet]
         public ActionResult UpdateTestimonial(int id)
@@ -69,7 +69,7 @@ namespace TasteFoodit.Controllers
             value.Title= p.Title;
             value.Description = p.Description;
             context.SaveChanges();
-            return RedirectToAction("TestimonialList");
+            return RedirectToAction("DetayTestimonial");
 
 
         }

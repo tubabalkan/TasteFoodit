@@ -33,7 +33,7 @@ namespace TasteFoodit.Controllers
 
             context.Chefs.Add(c);
             context.SaveChanges();
-            return RedirectToAction("ChefList");
+            return RedirectToAction("DetayChef");
 
         }
         public ActionResult DeleteChef(int id)
@@ -41,7 +41,7 @@ namespace TasteFoodit.Controllers
             var value = context.Chefs.Find(id);
             context.Chefs.Remove(value);
             context.SaveChanges();
-            return RedirectToAction("ChefList");
+            return RedirectToAction("DetayChef");
         }
         [HttpGet]
         public ActionResult UpdateChef(int id)
@@ -67,7 +67,7 @@ namespace TasteFoodit.Controllers
             value.Title = p.Title;
             value.Description = p.Description;
             context.SaveChanges();
-            return RedirectToAction("ChefList");
+            return RedirectToAction("DetayChef");
         }
         public ActionResult DetayChef()
         {
