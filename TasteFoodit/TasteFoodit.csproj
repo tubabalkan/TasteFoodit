@@ -7177,6 +7177,8 @@
     <Content Include="Views\Reservation\RezervasyonList.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Default\PartialRzr.cshtml" />
+    <Content Include="Views\AboutDetail\PartialItatistic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -11,7 +11,10 @@ namespace TasteFoodit.Controllers
         // GET: ChefDetail
         public ActionResult Index()
         {
+            string PageName = "Chef";
+            TempData["Page"] = PageName;
             return View();
+            
         }
     }
 }

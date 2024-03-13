@@ -11,11 +11,24 @@
     @Html.Action("PartialNavbarInfo", "Default")
     @Html.Action("PartialNavbar", "Default")
     <!-- END nav -->
+
+
     @RenderBody()
 
-    @Html.Action("PartialFooter", "Default")
+    <footer class="ftco-footer ftco-no-pb ftco-section">
+        <div class="container">
+            <div class="row mb-5">
 
-    @Html.Action("PartialScript", "Default");
+                @Html.Action("PartialTasteit", "Default")
+                @Html.Action("PartialOpenHours", "Default")
+                @Html.Action("PartialInstagramImage", "Default")
+                @Html.Action("PartialBulten", "Default")
+            </div>
+        </div>
+        @Html.Action("PartialFooter", "Default")
+    </footer>
+
+    @Html.Action("PartialScript", "Default")
 
 
 </body>
