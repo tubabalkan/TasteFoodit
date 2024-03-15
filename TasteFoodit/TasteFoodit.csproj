@@ -154,6 +154,7 @@
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="Controllers\RezervationDetailController.cs" />
+    <Compile Include="Controllers\SliderController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -165,6 +166,7 @@
     <Compile Include="Entities\OpenDayHour.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
+    <Compile Include="Entities\Slider.cs" />
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -7201,6 +7203,9 @@
     <Content Include="weblogin\weblogin Tema\fonts\Audiowide-Regular.ttf" />
     <Content Include="Views\ContactDetail\PartialBilgi.cshtml" />
     <Content Include="Views\ContactDetail\PartialMessage.cshtml" />
+    <Content Include="Views\Slider\SliderList.cshtml" />
+    <Content Include="Views\Slider\CreateSlider.cshtml" />
+    <Content Include="Views\Slider\UpdateSlider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
