@@ -7,11 +7,12 @@ using TasteFoodit.Context;
 using TasteFoodit.Entities;
 namespace TasteFoodit.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         // GET: Product
         TasteContext context = new TasteContext();
-        [Authorize]
+
         public ActionResult ProductList()
         {
             var values = context.Products.ToList();

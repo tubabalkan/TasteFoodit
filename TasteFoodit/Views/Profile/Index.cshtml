@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<TasteFoodit.Entities.Admin>
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
@@ -13,18 +14,34 @@
             <li class="breadcrumb-item active" aria-current="page">Şifre Değiştir</li>
         </ol>
     </div>
-
-    <div class="row">
-        <div class="col-lg-12 mb-4">
-            <div class="card">
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+    @foreach (var x in Model)
+    {
+        <div class="card card-primary card-outline">
+            <div class="card-body box-profile">
+                <div class="text-center">
+                    <img class="profile-user-img img-fluid img-circle" style="max-width: 200px; max-height: 200px;" src="@x.Görsel" alt="User profile picture">
                 </div>
-                <h3>Kullanıcı Adınız: @ViewBag.v</h3>
-                <div class="card-footer"></div>
+                <h3 class="profile-username text-center">Tuba BALKAN</h3>
+                <p class="text-muted text-center">Bilgisayar Mühendisi</p>
+                <ul class="list-group list-group-unbordered mb-3">
+                    <li class="list-group-item">
+                        <b>Kullanıı Adı</b> <a class="float-right">@x.UserName</a>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Şifre</b> <input type="password" class="float-right" value="@x.Password" disabled>
+                    </li>
+                    <li class="list-group-item">
+                        <b>Mail Adresi</b> <a class="float-right">@x.Email</a>
+                    </li>
+                </ul>
+                
             </div>
+            <!-- /.card-body -->
         </div>
-    </div>
+    }
+
 </div>
+
 
 
 

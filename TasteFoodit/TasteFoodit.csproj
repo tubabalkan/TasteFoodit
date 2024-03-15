@@ -2447,6 +2447,19 @@
     <Content Include="Content\DataTables\css\semanticui.scss" />
     <Content Include="Content\DataTables\css\mixins.scss" />
     <Content Include="Content\DataTables\css\common.scss" />
+    <Content Include="weblogin\css\font-awesome.css" />
+    <Content Include="weblogin\css\popup-box.css" />
+    <Content Include="weblogin\css\style.css" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.svg" />
+    <Content Include="weblogin\images\bg.jpg" />
+    <Content Include="weblogin\index.html" />
+    <Content Include="weblogin\js\jquery-2.1.4.min.js" />
+    <Content Include="weblogin\js\jquery.magnific-popup.js" />
+    <Content Include="weblogin\w3layouts-License.txt" />
+    <Content Include="weblogin\weblogin Tema\css\style.css" />
+    <Content Include="weblogin\weblogin Tema\images\b4.jpg" />
+    <Content Include="weblogin\weblogin Tema\index.html" />
+    <Content Include="weblogin\weblogin Tema\w3layouts-License.txt" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.js" />
     <Content Include="Scripts\DataTables\autoFill.bootstrap.min.js" />
@@ -7179,6 +7192,13 @@
     <Content Include="Views\Profile\Index.cshtml" />
     <Content Include="Views\Default\PartialRzr.cshtml" />
     <Content Include="Views\AboutDetail\PartialItatistic.cshtml" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.eot" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.ttf" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.woff" />
+    <Content Include="weblogin\fonts\fontawesome-webfont.woff2" />
+    <Content Include="weblogin\fonts\FontAwesome.otf" />
+    <Content Include="weblogin\weblogin Tema\fonts\Asap-Regular.ttf" />
+    <Content Include="weblogin\weblogin Tema\fonts\Audiowide-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

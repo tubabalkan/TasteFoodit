@@ -16,7 +16,14 @@ namespace TasteFoodit.Controllers
             ViewBag.v2 = context.Products.Count();
             ViewBag.v3 = context.Chefs.Count();
             ViewBag.v4 = context.Reservations.Where(x=>x.ReservationStatus=="Aktif").Count();
+            ViewBag.v5 = context.Products.Where(x => x.Category.CategoryName == "Kahvaltı").Count();
+            ViewBag.v6 = context.Products.Where(x => x.Category.CategoryName == "Çorbalar").Count();
+            ViewBag.v7 = context.Products.Where(x => x.Category.CategoryName == "Ana Yemekler").Count();
+            ViewBag.v8 = context.Products.Where(x => x.Category.CategoryName == "Tatlilar").Count();
+            ViewBag.v9 = context.Products.Where(x => x.Category.CategoryName == "Soğuk İçecekler").Count();
+            ViewBag.v10 = context.Products.Where(x => x.Category.CategoryName == "Sıcak İçecekler").Count();
             return View();
         }
+
     }
 }
