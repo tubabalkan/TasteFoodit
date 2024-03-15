@@ -7199,6 +7199,8 @@
     <Content Include="weblogin\fonts\FontAwesome.otf" />
     <Content Include="weblogin\weblogin Tema\fonts\Asap-Regular.ttf" />
     <Content Include="weblogin\weblogin Tema\fonts\Audiowide-Regular.ttf" />
+    <Content Include="Views\ContactDetail\PartialBilgi.cshtml" />
+    <Content Include="Views\ContactDetail\PartialMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

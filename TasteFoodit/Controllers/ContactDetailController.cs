@@ -13,5 +13,13 @@ namespace TasteFoodit.Controllers
         {
             return View();
         }
+        public PartialViewResult PartialBilgi()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialMessage()
+        {
+            return PartialView();
+        }
     }
 }
