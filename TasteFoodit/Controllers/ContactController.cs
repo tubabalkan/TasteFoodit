@@ -89,7 +89,7 @@ namespace TasteFoodit.Controllers
         public ActionResult MessageIsReadFalse(int id)
         {
             var values = context.Contacts.Find(id);
-            values.IsRead = true;
+            values.IsRead = false;
             context.SaveChanges();
             return RedirectToAction("ContactList");
         }

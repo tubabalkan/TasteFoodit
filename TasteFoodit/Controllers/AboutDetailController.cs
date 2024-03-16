@@ -10,9 +10,7 @@ namespace TasteFoodit.Controllers
     {
         TasteContext context = new TasteContext();
         public ActionResult Index()
-        {
-            string PageName = "About";
-            TempData["Page"] = PageName;
+        {         
             return View();
         }
         public PartialViewResult PartialItatistic()

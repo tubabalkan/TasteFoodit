@@ -14,6 +14,6 @@ namespace TasteFoodit.Entities
         public DateTime ReservationDate { get; set; }
         public string Time { get; set; }
         public byte GuestCount { get; set; }
-        public string ReservationStatus { get; set; }
+        public bool ReservationStatus { get; set; }
     }
 }

@@ -7208,6 +7208,8 @@
     <Content Include="Views\Slider\CreateSlider.cshtml" />
     <Content Include="Views\Slider\UpdateSlider.cshtml" />
     <Content Include="Views\Dashboard\PartialMessage.cshtml" />
+    <Content Include="Views\RezervationDetail\PartialRezervasyon.cshtml" />
+    <Content Include="Views\Reservation\UpdateReservation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

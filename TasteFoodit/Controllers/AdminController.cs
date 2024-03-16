@@ -67,8 +67,6 @@ namespace TasteFoodit.Controllers
             
             context.SaveChanges();
             return RedirectToAction("AdminList");
-
-
         }
     }
 }
