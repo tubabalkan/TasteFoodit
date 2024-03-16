@@ -79,6 +79,8 @@ namespace TasteFoodit.Controllers
             value.SliderId = s.SliderId;
             value.SliderName = s.SliderName;
             value.ImageUrl = s.ImageUrl;
+            value.Description = s.Description;
+            value.Title = s.Title;
 
             context.SaveChanges();
             return RedirectToAction("SliderList");

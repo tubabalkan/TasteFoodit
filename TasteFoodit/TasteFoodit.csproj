@@ -167,6 +167,7 @@
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
     <Compile Include="Entities\Slider.cs" />
+    <Compile Include="Entities\SocialMedia.cs" />
     <Compile Include="Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

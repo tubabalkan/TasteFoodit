@@ -3,20 +3,23 @@
     <div class="home-slider owl-carousel js-fullheight">
         @foreach (var x in Model)
         {
-    <div class="slider-item js-fullheight" style="background-image:url(@x.ImageUrl);">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
-                <div class="col-md-12 ftco-animate">
-                    <div class="text w-100 mt-5 text-center">
-                        <span class="subheading">Taste.it Restaurant</span>
-                        <h1>Cooking Since</h1>
-                        <span class="subheading-2">1958</span>
+            <div class="slider-item js-fullheight" style="background-image:url(@x.ImageUrl);">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                        <div class="col-md-12 ftco-animate">
+                            <div class="text w-100 mt-5 text-center">
+                                <span class="subheading">Taste.it Restaurant</span>
+                                <h1>@x.Description</h1>
+                                <span class="subheading-2">@x.Title</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>}
-        -
+        }
+
+
+
     </div>
 </section>

@@ -68,7 +68,8 @@ namespace TasteFoodit.Controllers
         }
         public PartialViewResult PartialTasteit()
         {
-            return PartialView();
+            var values = context.SocialMedias.ToList();
+            return PartialView(values);
         }
         public PartialViewResult PartialOpenHours()
         {
