@@ -156,6 +156,7 @@
     <Compile Include="Controllers\RezervationDetailController.cs" />
     <Compile Include="Controllers\SliderController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
+    <Compile Include="Controllers\TestiNavbarController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Address.cs" />
     <Compile Include="Entities\Admin.cs" />
@@ -7215,6 +7216,7 @@
     <Content Include="Views\Dashboard\PartialMessage.cshtml" />
     <Content Include="Views\RezervationDetail\PartialRezervasyon.cshtml" />
     <Content Include="Views\Reservation\UpdateReservation.cshtml" />
+    <Content Include="Views\TestiNavbar\PartialTestimonialNavbar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

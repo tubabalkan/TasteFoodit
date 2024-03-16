@@ -12,6 +12,8 @@ namespace TasteFoodit.Controllers
         TasteContext context = new TasteContext();
         public ActionResult Index()
         {
+            
+           
             return View();
         } 
         public PartialViewResult PartialHead()
@@ -24,6 +26,9 @@ namespace TasteFoodit.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
+            ViewBag.Urun = context.Products.Count();
+            ViewBag.Sef = context.Chefs.Count();
+            ViewBag.Referans = context.Testimonials.Count();
             ViewBag.notificationIsreadByFalseCount = context.Notifications.Where(x => x.IsRead == false).Count();
             var values = context.Notifications.Where(x=>x.IsRead==false).ToList();
             return PartialView(values);
@@ -44,5 +49,9 @@ namespace TasteFoodit.Controllers
             context.SaveChanges();
             return RedirectToAction("CategoryList", "Category");
         }
+
+
+
+
     }
 }
