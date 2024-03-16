@@ -30,6 +30,7 @@
                                     <th>Başlık</th>
                                     <th>Mesaj</th>
                                     <th>Tarih</th>
+                                    <th>Okunma Durumu</th>
                                     <th>Sil</th>
                                     <th>Güncelle</th>
                                 </tr>
@@ -46,7 +47,15 @@
                                         <td>@item.Email</td>
                                         <td>@item.Subject</td>
                                         <td>@item.Message</td>
-                                        <td>@item.SendDate</td>
+                                        <td>@(((DateTime)item.SendDate).ToString("dd.MM.yyyy"))</td>
+                                        @if (item.IsRead == true)
+                                        {
+                                            <td><a href="/Contact/MessageIsReadFalse/@item.ContactId" class="btn btn-warning">Okundu</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/Contact/MessageIsReadTrue/@item.ContactId" class="btn btn-dark">Okunmadı</a></td>
+                                        }
                                         <td><a href="/Contact/DeleteContact/@item.ContactId" class="btn btn-danger">Sil</a></td>
                                         <td><a href="/Contact/UpdateContact/@item.ContactId" class="btn btn-success">Güncelle</a></td>
                                     </tr>
@@ -54,7 +63,7 @@
                             </tbody>
                         </table>
                         <br />
-                        <a href="/Contact/CreateContact/" class="btn btn-primary">Mesaj Detayı</a>
+                        @*<a href="/Contact/CreateContact/" class="btn btn-primary">Mesaj Detayı</a>*@
                     </div>
                     <div class="card-footer"></div>
                 </div>

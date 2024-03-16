@@ -31,7 +31,14 @@ namespace TasteFoodit.Controllers
         public ActionResult CreateContact(Contact a)
         {
 
-            context.Contacts.Add(a);
+            var value = context.Contacts.Find(a.ContactId);
+            value.ContactId = a.ContactId;
+            value.NameSurname = a.NameSurname;
+            value.Email = a.Email;
+            value.Subject = a.Subject;
+            value.Message = a.Message;
+            value.SendDate = a.SendDate;
+            value.IsRead = a.IsRead;
             context.SaveChanges();
             return RedirectToAction("ContactList");
 
@@ -67,6 +74,22 @@ namespace TasteFoodit.Controllers
             value.Subject = a.Subject;
             value.Message= a.Message;
             value.SendDate= a.SendDate;
+            value.IsRead= a.IsRead;
+            context.SaveChanges();
+            return RedirectToAction("ContactList");
+        }
+
+        public ActionResult MessageIsReadTrue(int id)
+        {
+            var values = context.Contacts.Find(id);
+            values.IsRead = true;
+            context.SaveChanges();
+            return RedirectToAction("ContactList");
+        }
+        public ActionResult MessageIsReadFalse(int id)
+        {
+            var values = context.Contacts.Find(id);
+            values.IsRead = true;
             context.SaveChanges();
             return RedirectToAction("ContactList");
         }

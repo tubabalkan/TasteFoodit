@@ -40,6 +40,9 @@
                             <label>Tarih</label>
                             @Html.TextBoxFor(x => x.SendDate, new { @class = "form-control" })
                             <br />
+                            <label>Durum</label>
+                            @Html.TextBoxFor(x => x.IsRead, new { @class = "form-control" })
+                            <br />
 
                         </div>
                         <button type="submit" class="btn btn-success">Mesajı Güncelle</button>
