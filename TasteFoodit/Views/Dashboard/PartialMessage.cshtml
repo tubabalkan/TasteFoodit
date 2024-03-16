@@ -1,0 +1,43 @@
+﻿@model List<TasteFoodit.Entities.Contact>
+   
+<div class="col-xl-8 col-lg-7 mb-4">
+    <div class="card">
+        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+            <h6 class="m-0 font-weight-bold text-primary">Mesajlar</h6>
+            <a class="m-0 float-right btn btn-danger btn-sm" href="/Contact/ContactList/">
+                Mesajlar Listesi <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="table-responsive">
+            <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Gönderici</th>
+                        <th>Mail Adresi</th>
+                        <th>Konu</th>
+                        <th>Messaj İçeriği</th>
+                        <th>Okunma Durumu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{ int sirano = 0;}
+                    @foreach (var x in Model)
+                    {
+                <tr>
+                    <td><a href="#">@{sirano++; } @sirano</a></td>
+                    <td>@x.NameSurname</td>
+                    <td>@x.Email</td>
+                    <td>@x.Subject</td>
+                    <td>@x.Message</td>
+                    <td><span class="badge badge-success">@x.IsRead</span></td>
+
+                </tr>}
+
+
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>

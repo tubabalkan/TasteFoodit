@@ -7207,6 +7207,7 @@
     <Content Include="Views\Slider\SliderList.cshtml" />
     <Content Include="Views\Slider\CreateSlider.cshtml" />
     <Content Include="Views\Slider\UpdateSlider.cshtml" />
+    <Content Include="Views\Dashboard\PartialMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

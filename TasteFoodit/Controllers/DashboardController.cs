@@ -24,6 +24,10 @@ namespace TasteFoodit.Controllers
             ViewBag.v10 = context.Products.Where(x => x.Category.CategoryName == "Sıcak İçecekler").Count();
             return View();
         }
-
+        public PartialViewResult PartialMessage()
+        {
+            var values = context.Contacts.ToList();
+            return PartialView(values);
+        }
     }
 }
