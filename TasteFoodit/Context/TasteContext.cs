@@ -22,5 +22,12 @@ namespace TasteFoodit.Context
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.Entity<Contact>().Property(x => x.SendDate).HasColumnType("datetime");
+        }
     }
 }

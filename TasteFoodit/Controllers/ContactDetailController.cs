@@ -26,6 +26,7 @@ namespace TasteFoodit.Controllers
         [HttpPost]
         public PartialViewResult PartialMessage(Contact c)
         {
+            c.SendDate = DateTime.Now;
             context.Contacts.Add(c);
             context.SaveChanges();
             return PartialView();

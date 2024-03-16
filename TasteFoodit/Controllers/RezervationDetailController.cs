@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using TasteFoodit.Context;
 using TasteFoodit.Entities;
-
+using TasteFoodit.Models;
 
 namespace TasteFoodit.Controllers
 {
@@ -24,9 +24,18 @@ namespace TasteFoodit.Controllers
         }
       
         [HttpPost]
-        public PartialViewResult PartialRezervasyon(Reservation r)
+        public PartialViewResult PartialRezervasyon(ReservationModel r)
         {
-            context.Reservations.Add(r);
+            Reservation reservation = new Reservation()
+            {
+                Name = r.Name,
+                Email = r.Email,
+                Phone = r.Phone,
+                GuestCount = r.GuestCount,
+                ReservationDate = DateTime.Parse($"{r.ReservationDate.Split('/')[2]}-{r.ReservationDate.Split('/')[0]}-{r.ReservationDate.Split('/')[1]}"),
+                Time = r.Time
+            };
+            context.Reservations.Add(reservation);
             context.SaveChanges();
             return PartialView();
         }

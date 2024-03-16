@@ -188,7 +188,12 @@
     <Compile Include="Migrations\202403051740085_mig4.designer.cs">
       <DependentUpon>202403051740085_mig4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202403161752028_mig5.cs" />
+    <Compile Include="Migrations\202403161752028_mig5.designer.cs">
+      <DependentUpon>202403161752028_mig5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ReservationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -7213,7 +7218,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Templates\ruang-admin\.git\objects\info\" />
     <Folder Include="Templates\ruang-admin\.git\objects\pack\" />
     <Folder Include="Templates\ruang-admin\.git\refs\tags\" />
@@ -7245,6 +7249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403051740085_mig4.resx">
       <DependentUpon>202403051740085_mig4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403161752028_mig5.resx">
+      <DependentUpon>202403161752028_mig5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
