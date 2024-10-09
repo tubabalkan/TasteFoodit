@@ -1,13 +1,13 @@
 ## TasteFoodit
 M&Y Yazılım bünyesinde Murat Yücedağ Hocamızla birlikte geliştirdiğim 2.Projem. TasteFoodit projemde hem kullanıcı ara yüzü hem de admin paneli bulunmakta.
-## Kullanılan Teknolojiler
--ASP.NET MVC(Model-View-Controller)</br>
--Code First(Veritabanı şemaları ve diğer yapısal öğeler kod tarafında Oluşturuldu ve ardından veritabanı şemasına dönüştürüldü.)</br>
--Authorize(kullanıcıların erişim haklarını kontrol etmek için kullanıldı.)</br>
--HTML-CSS-BOOTSTRAP(Arayüz Tasarımı İçin)</br>
--Js</br>
--MSSQL(Veritabanı)</br>
-## Proje içi Görseller
+## 📌 Kullanılan Teknolojiler
+✔ ASP.NET MVC(Model-View-Controller)</br>
+✔ Code First(Veritabanı şemaları ve diğer yapısal öğeler kod tarafında Oluşturuldu ve ardından veritabanı şemasına dönüştürüldü.)</br>
+✔ Authorize(kullanıcıların erişim haklarını kontrol etmek için kullanıldı.)</br>
+✔ HTML-CSS-BOOTSTRAP(Arayüz Tasarımı İçin)</br>
+✔ Js</br>
+✔ MSSQL(Veritabanı)</br>
+## 📌 Proje içi Görseller
 ![Diagram](https://github.com/tubabalkan/TasteFoodit/assets/100600148/61932a38-2cbd-4c34-901b-d55f6a6e41f8)</br>
 ![Default1](https://github.com/tubabalkan/TasteFoodit/assets/100600148/790b0415-3fa6-4122-9b74-0900158767ea)</br>
 ![Default2](https://github.com/tubabalkan/TasteFoodit/assets/100600148/812566a8-aade-431c-968d-7c744ad9ed11)</br>
